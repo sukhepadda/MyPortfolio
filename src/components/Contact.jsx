@@ -12,7 +12,7 @@ const Contact = () => {
   const [disableBtn, setDisableBtn] = useState(false);
 
   const submitHandler = async (e) => {
-    e.preventDefault();
+    e.preventDefault();// for change default behaviour of any event
     setDisableBtn(true);
     try {
       await addDoc(collection(db, "contacts"), {
